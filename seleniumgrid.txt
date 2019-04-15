@@ -1,0 +1,51 @@
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+
+java -Dwebdriver.ie.driver="C:\\IEDriverServer.exe" -Dwebdriver.chrome.driver="C:\\Users\\Admin\\Downloads\\chromedriver.exe" -Dwebdriver.gecko.driver="d:\\geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -timeout 300000 –maxSession 3 -hub http://192.168.43.84:4444/grid/register
+
+
+
+
+java -Dwebdriver.ie.driver="C:\\IEDriverServer.exe" -Dwebdriver.chrome.driver="C:\\Users\\Admin\\Downloads\\chromedriver.exe" -Dwebdriver.gecko.driver="d:\\geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -browser browsername=chrome -hub http://192.168.1.100:4444/grid/register
+
+
+
+-browser browserName=firefox,version=3.6,maxInstances=5,platform=LINUX
+
+-browser browserName=chrome,maxInstances=5,platform=windows
+
+
+ 
+java -Dwebdriver.ie.driver="C:\\IEDriverServer.exe" -Dwebdriver.chrome.driver="C:\\Users\\Admin\\Downloads\\chromedriver.exe" -Dwebdriver.gecko.driver="d:\\geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -browser browserName=chrome,maxInstances=2,platform=windows -hub http://192.168.1.101:4444/grid/register
+
+
+java -Dwebdriver.chrome.driver="C:\\Users\\Admin\\Downloads\\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -browser browserName=chrome,browserName=firefox,browserName=chrome,maxInstances=2,platform=windows -hub http://192.168.1.101:4444/grid/register
+
+
+ 
+
+java -Dwebdriver.chrome.driver="C:\\Users\\Admin\\Downloads\\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -browser browserName=chrome -browser browserName=firefox -browser browserName=iexplore,maxInstances=3,platform=windows -timeout 300000 –maxSession 3
+ -hub http://192.168.1.100:4444/grid/register
+
+
+java -Dwebdriver.ie.driver="C:\\IEDriverServer.exe" -Dwebdriver.chrome.driver="C:\\Users\\Admin\\Downloads\\chromedriver.exe" -Dwebdriver.gecko.driver="d:\\geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -browser browserName="chrome,maxInstances=2" -browser browserName="firefox,version=64.0b8" -browser browserName="internet explorer,maxInstances=1" -timeout 800000 -hub http://192.168.1.101:4444/grid/register
+
+ -browser "browserName=internet explorer,version=11,platform=WINDOWS,maxInstances=10"
+
+java -Dwebdriver.ie.driver="C:\\IEDriverServer.exe" -Dwebdriver.chrome.driver="C:\\Users\\Admin\\Downloads\\chromedriver.exe" -Dwebdriver.gecko.driver="d:\\geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -browser browserName="chrome,maxInstances=2" -browser browserName="firefox,version=64.0b8" -browser browserName="internet explorer,maxInstances=1" -hub http://192.168.1.101:4444/grid/register
+
+ 	64.0b8
+http://169.254.146.50:4444/grid/register/
+
+  http://169.254.146.50:4444/wd/hub
+http://192.168.1.100:4444/wd/hub
+
+
+ 
+
+ 
+
+
+
+
+
+
